@@ -1,0 +1,405 @@
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --secondary: #0f172a;
+    --bg-color: #f8fafc;
+    --surface: #ffffff;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --border: #e2e8f0;
+    --danger: #ef4444;
+    --fav: #f59e0b;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.app-header {
+    background: linear-gradient(135deg, var(--secondary), #1e293b);
+    color: white;
+    padding: 40px 0 30px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 40px;
+    border-bottom: 4px solid var(--primary);
+}
+
+.app-header h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    margin-bottom: 24px;
+    font-weight: 300;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.btn:active:not(:disabled) {
+    transform: scale(0.97);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-detail {
+    background-color: var(--bg-color);
+    color: var(--primary);
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 12px;
+}
+
+.btn-detail:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-fav {
+    background-color: transparent;
+    color: var(--fav);
+    border: 2px solid var(--fav);
+    width: 100%;
+}
+
+.btn-fav:hover {
+    background-color: var(--fav);
+    color: white;
+}
+
+.btn-delete {
+    background-color: transparent;
+    color: var(--danger);
+    border: 2px solid var(--danger);
+    width: 100%;
+}
+
+.btn-delete:hover {
+    background-color: var(--danger);
+    color: white;
+}
+
+.btn-back {
+    margin-bottom: 24px;
+    background-color: var(--surface);
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.btn-back:hover {
+    border-color: var(--text-muted);
+    background-color: #f1f5f9;
+}
+
+.search-section {
+    background-color: var(--surface);
+    padding: 24px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    margin-bottom: 40px;
+    border: 1px solid var(--border);
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-end;
+}
+
+.search-group {
+    flex: 1 1 100%;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.search-group input {
+    flex: 1;
+    min-width: 200px;
+}
+
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    background-color: var(--bg-color);
+    transition: all 0.2s;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+    background-color: var(--surface);
+}
+
+.date-filters {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+}
+
+.date-filters label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    width: 100%;
+    flex: 1;
+}
+
+#view-title {
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.job-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.job-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: transparent;
+}
+
+.job-card:hover::before {
+    opacity: 1;
+}
+
+.job-card.favorite::before {
+    background-color: var(--fav);
+    opacity: 1;
+    width: 6px;
+}
+
+.job-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.job-card p {
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}
+
+.job-card p strong {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.job-detail-view {
+    grid-column: 1 / -1;
+    background-color: var(--surface);
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border);
+}
+
+.job-detail-view h2 {
+    color: var(--secondary);
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 16px;
+}
+
+.detail-content {
+    background-color: var(--bg-color);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.detail-content h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 24px;
+}
+
+.detail-content p {
+    margin-bottom: 16px;
+    font-size: 1.05rem;
+    color: var(--text-main);
+}
+
+.detail-content p strong {
+    color: var(--text-muted);
+    display: inline-block;
+    min-width: 200px;
+}
+
+.job-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: white;
+    background-color: var(--primary);
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: var(--shadow-md);
+    transition: all 0.2s;
+}
+
+.job-link:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+#page-info {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-main);
+    background: var(--surface);
+    padding: 8px 20px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+}
+
+@media (min-width: 768px) {
+    .search-form {
+        flex-wrap: nowrap;
+    }
+    .search-group {
+        flex: 2;
+        flex-wrap: nowrap;
+    }
+    #filter-contract {
+        flex: 1;
+    }
+    .date-filters {
+        flex: auto;
+        flex-wrap: nowrap;
+    }
+    .date-filters label {
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+    }
+    .date-filters input {
+        width: auto;
+    }
+}

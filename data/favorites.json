@@ -1,0 +1,121 @@
+{
+  "favorites": [
+    {
+      "id": "4wBpIVYp7eE",
+      "fields": {
+        "numerooffreforem": "1365233",
+        "titreoffre": "Tender Manager | Boiler (H/F/X)",
+        "lieuxtravaillocalite": [
+          "ANS"
+        ],
+        "lieuxtravailregion": [
+          "Belgique",
+          "Province de Liège",
+          "RÉGION WALLONNE"
+        ],
+        "lieuxtravailcodepostal": [
+          "4430"
+        ],
+        "lieuxtravailregionnuts": [
+          "BE",
+          "BE33",
+          "BE3"
+        ],
+        "lieuxtravailgeo": [
+          {
+            "lon": 5.520372,
+            "lat": 50.660282
+          }
+        ],
+        "typecontrat": "Durée indéterminée",
+        "nomemployeur": "Equans",
+        "regimetravail": "Temps plein",
+        "nombrepostes": 1,
+        "niveauxetudes": null,
+        "niveauxetudesisced2011": null,
+        "langues": [
+          "Néerlandais",
+          "Français",
+          "Anglais"
+        ],
+        "languescodeiso2": [
+          "NL",
+          "FR",
+          "EN"
+        ],
+        "experiencerequise": null,
+        "permisdeconduire": null,
+        "secteurs": [
+          "Installation de systèmes d'éclairage et de signalisation pour chaussées, voies ferrées, aéroports et installations portuaires (y compris l'installation de panneaux de signalisation)"
+        ],
+        "secteurscodenace": [
+          "4321201"
+        ],
+        "source": "Equans Belux",
+        "referenceexterne": "807553477",
+        "url": "https://www.leforem.be/recherche-offres/offre-detail/1365233",
+        "datedebutdiffusion": "2025-05-07",
+        "datefindiffusion": "2025-06-18",
+        "metier": "Acheteur / Acheteuse",
+        "metiercodedimeco": "M110101-1"
+      }
+    },
+    {
+      "id": "1TSMXP38gHM",
+      "fields": {
+        "numerooffreforem": "1892148",
+        "titreoffre": "Technico-commercial agricole (H/F/X)",
+        "lieuxtravaillocalite": [
+          "LIBRAMONT-CHEVIGNY"
+        ],
+        "lieuxtravailregion": [
+          "Belgique",
+          "Province du Luxembourg",
+          "RÉGION WALLONNE"
+        ],
+        "lieuxtravailcodepostal": [
+          "6800"
+        ],
+        "lieuxtravailregionnuts": [
+          "BE",
+          "BE34",
+          "BE3"
+        ],
+        "lieuxtravailgeo": [
+          {
+            "lon": 5.374626,
+            "lat": 49.918533
+          }
+        ],
+        "typecontrat": "Intérimaire avec option sur durée indéterminée",
+        "nomemployeur": "Accent",
+        "regimetravail": "Temps plein",
+        "nombrepostes": 1,
+        "niveauxetudes": null,
+        "niveauxetudesisced2011": null,
+        "langues": [
+          "Français"
+        ],
+        "languescodeiso2": [
+          "FR"
+        ],
+        "experiencerequise": null,
+        "permisdeconduire": null,
+        "secteurs": [
+          "Commerce de gros de produits à base de tabac"
+        ],
+        "secteurscodenace": [
+          "46350"
+        ],
+        "source": "Accent Job",
+        "referenceexterne": "944703395",
+        "url": "https://www.leforem.be/recherche-offres/offre-detail/1892148",
+        "datedebutdiffusion": "2026-05-09",
+        "datefindiffusion": "2026-06-20",
+        "metier": "Délégué technico-commercial / Déléguée technico-commerciale",
+        "metiercodedimeco": "D140701-1"
+      }
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

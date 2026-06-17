@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FavJobOff</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="app-header">
+        <div class="container">
+            <h1>FavJobOff</h1>
+            <p class="tagline">"Your favorite offline job offers."</p>
+            <button id="btn-toggle-favorites" class="btn btn-secondary">Voir mes Favoris</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="search-section" class="search-section">
+            <form id="search-form" class="search-form">
+                <div class="search-group">
+                    <input type="text" id="search-job" placeholder="🔎 Fonction, mots-clés ou nom d'entreprise...">
+                    <input type="text" id="search-location" placeholder="📍 Ville ou code postal...">
+                </div>
+
+                <select id="filter-contract">
+                    <option value="">Tous les contrats</option>
+                    <option value="indéterminée">CDI</option>
+                    <option value="déterminée">CDD</option>
+                </select>
+
+                <div class="date-filters">
+                    <label>Du: <input type="date" id="filter-date-start"></label>
+                    <label>Au: <input type="date" id="filter-date-end"></label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Rechercher</button>
+            </form>
+        </section>
+
+        <button type="button" id="btn-back" class="btn btn-back" style="display: none;">🔙 Accueil</button>
+        <h2 id="view-title">Offres d'emploi</h2>
+
+        <section id="jobs-container" class="jobs-grid">
+        </section>
+
+        <nav id="pagination" class="pagination">
+            <button id="btn-prev" class="btn" disabled>Précédent</button>
+            <span id="page-info">Page 1</span>
+            <button id="btn-next" class="btn" disabled>Suivant</button>
+        </nav>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
